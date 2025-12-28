@@ -27,8 +27,5 @@ spec:
         - name: frontend
           image: public.ecr.aws/t7a2g2e7/three-tier-frontend:latest
           imagePullPolicy: Always
-          env:
-            - name: REACT_APP_BACKEND_URL
-              value: "http://app.todotask.com/api/tasks"
           ports:
             - containerPort: 80
